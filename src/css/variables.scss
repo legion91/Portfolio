@@ -52,3 +52,7 @@ $breakpoints: (
         $widescreen '(min-width: #{$grid-widescreen})',
         $tablet '(max-width: #{$grid-tablet})'
 );
+
+/*================ Variables ================*/
+
+$color_text: #282828;

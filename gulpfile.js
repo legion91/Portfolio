@@ -41,7 +41,7 @@ gulp.task('styles', () => {
       }))
       .pipe(sourcemaps.write('./'))
       //Выходная папка для стилей
-      .pipe(gulp.dest('./css'))
+      .pipe(gulp.dest('./build/css'))
       .pipe(browserSync.stream());
 });
 

@@ -13,7 +13,14 @@
   text-align: center;
 }
 
-.hero__title {
+.hero__cover {
+ display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__cover__title {
   color: $color_text;
   font-family: "Exo Thin";
   font-size: 60px;
@@ -22,3 +29,61 @@
   letter-spacing: 2.4px;
 }
 
+.hero__cover__title-2 {
+  color: $color_text;
+  font-family: "Exo Thin";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 75px;
+  letter-spacing: 2.4px;
+  margin-bottom: 40px;
+}
+
+.hero__cover__play {
+  margin-bottom: 40px;
+  width: 59px;
+  -webkit-transition: 1s;
+  border-radius: 50%;
+  transition: 1s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 36px -9px rgba(50, 57, 105, 1);
+    border-radius: 50%;
+    transition: 1s;
+  }
+}
+
+.hero__cover__try {
+  color: $primary_white;
+  background-color: $primary_red;
+  font-family: Exo Regular;
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 75px; */
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  padding: 20px 50px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  transition: 1s;
+  &:hover {
+    box-shadow: 0px 0px 36px -9px rgba(255, 109, 109, 1);;
+    transition: 1s;
+    border-radius: 8px;
+    color: $primary_black;
+  }
+}
+
+.hero__cover__text {
+  opacity: 0.6;
+  color: $color_text;
+  font-family: Exo Regular;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+}
+
+@include media-query($medium-down) {
+
+}

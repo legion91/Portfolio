@@ -29,15 +29,15 @@ $grid-large: 992px;
 $grid-tablet: 1200px;
 $grid-widescreen: 1400px;
 
-$small: 'small';
+$small: 'small'; //Мобила
 $medium: 'medium';
-$medium-down: 'medium-down';
+$medium-down: 'medium-down'; //Планшет
 $medium-up: 'medium-up';
 $large: 'large';
 $large-down: 'large-down';
 $large-up: 'large-up';
 $widescreen: 'widescreen';
-$tablet: 'tablet';
+$tablet: 'tablet'; //Большой планшет
 
 // The `$breakpoints` list is used to build our media queries.
 // You can use these in the media-query mixin.
@@ -56,3 +56,6 @@ $breakpoints: (
 /*================ Variables ================*/
 
 $color_text: #282828;
+$primary_red: #ff6d6d;
+$primary_white: #ffffff;
+$primary_black: #000000;

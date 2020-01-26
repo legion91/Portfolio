@@ -1,0 +1,32 @@
+.sub-heading {
+  color: $primary_red;
+  font-family: $primary_font;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+
+.heading {
+  font-family: $primary_font;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 1.6px;
+  color: $primary_black;
+  letter-spacing: 1.6px;
+
+  @include media-query($medium-down) {
+    font-size: 30px;
+  }
+}
+
+.description {
+  opacity: 0.66;
+  color: $primary_black;
+  font-family: $primary_font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}

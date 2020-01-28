@@ -29,10 +29,12 @@
 
       @include media-query($medium-down) {
         font-size: 40px;
+        max-width: 80%;
       }
 
       @include media-query($small) {
         font-size: 30px;
+        max-width: 91%;
       }
     }
 
@@ -78,7 +80,7 @@
 
       @include media-query($small) {
         padding-bottom: 20px;
-        color: $primary_white;
+        color: $primary_red;
       }
     }
   }

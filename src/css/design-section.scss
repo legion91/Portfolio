@@ -1,0 +1,59 @@
+.design {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.design__left-box {
+  width: 65%;
+  position: relative;
+  padding: 190px 150px 20px 165px;
+  z-index: 5;
+
+  @include media-query($medium-down) {
+    width: 100%;
+    padding: 40px 40px 20px 40px;
+  }
+
+  @include media-query($small) {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+.design__sub-heading {
+   margin-bottom: 15px;
+ }
+
+.design__heading {
+  margin-bottom: 45px;
+
+  span {
+    color: $primary_red;
+  }
+}
+
+.design__description {
+
+}
+
+.child {
+  margin-bottom: 25px;
+}
+
+.design__right-box {
+  width: 35%;
+  background-color: $primary_backgraund;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  @include media-query($medium-down) {
+    display: none;
+  }
+}
+
+.design__delta {
+  height: 580px;
+  width: 100%;
+  position: absolute;
+}

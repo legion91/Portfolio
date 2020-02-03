@@ -7,25 +7,34 @@
 .design__left-box {
   width: 65%;
   position: relative;
-  padding: 190px 150px 20px 165px;
+  padding: 190px 150px 190px 165px;
   z-index: 5;
 
-  @include media-query($medium-down) {
+  @include media-query($tablet) {
     width: 100%;
-    padding: 40px 40px 20px 40px;
+    padding: 40px;
   }
 
   @include media-query($small) {
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
   }
 }
 
 .design__sub-heading {
    margin-bottom: 15px;
+
+  @include media-query($tablet) {
+    text-align: center;
+  }
  }
 
 .design__heading {
   margin-bottom: 45px;
+  
+  @include media-query($tablet) {
+    font-size: 33px;
+    text-align: center;
+  }
 
   span {
     color: $primary_red;
@@ -33,11 +42,11 @@
 }
 
 .design__description {
-
-}
-
-.child {
   margin-bottom: 25px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .design__right-box {
@@ -45,15 +54,13 @@
   background-color: $primary_backgraund;
   display: flex;
   align-items: flex-end;
-  position: relative;
 
-  @include media-query($medium-down) {
+  @include media-query($tablet) {
     display: none;
   }
 }
 
 .design__delta {
-  height: 10vw;
-  width: 100%;
-  position: absolute;
+   height: 60%;
+   width: 100%;
 }

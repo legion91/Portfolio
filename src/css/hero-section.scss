@@ -11,6 +11,11 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  
+  @include media-query($small) {
+    min-height: unset;
+    padding: 20px;
+  }
 
   .hero__block {
     display: flex;
@@ -52,6 +57,10 @@
       }
     }
 
+    img [title="WATCH ME"] {
+      border-radius: 50%;
+    }
+
     .hero__block-button-try-now {
       color: $primary_white;
       background-color: $primary_red;
@@ -80,7 +89,8 @@
 
       @include media-query($small) {
         padding-bottom: 20px;
-        color: $primary_red;
+        color: $primary_white;
+        opacity: 1;
       }
     }
   }

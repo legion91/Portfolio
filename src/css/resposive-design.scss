@@ -1,0 +1,34 @@
+.resposive-design {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resposive-design__left-box {
+  width: 50%;
+  position: relative;
+}
+
+.resposive-design__macbook {
+  width: 220%;
+  position: relative;
+  top: -125px;
+  left: -880px;
+}
+
+.resposive-design__right-box {
+  width: 50%;
+  padding: 140px 245px 145px 50px;
+}
+
+.resposive-design__sub-heading {
+  margin-bottom: 25px;
+}
+
+.resposive-design__heading {
+  margin-bottom: 35px;
+
+  span {
+    color: $primary_red;
+  }
+}

@@ -41,7 +41,7 @@
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  Flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0 125px;
 
   @include media-query($tablet) {
